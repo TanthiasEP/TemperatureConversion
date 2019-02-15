@@ -1,0 +1,26 @@
+//Let's set up a variable to store our tempeature. We'll
+//keep this variable constant, as we won't update it. If
+//we wish to change the value later, we'll do so here.
+const kelvin = 293;
+
+//We'll convert Kelvin to Celsius, which is 273 less. We
+//won't be changing this degree either, so we use constant.
+const celsius = kelvin - 273;
+
+//Next up we'll convert Celsius to Fahrenheit. We'll be
+//rounding, so we'll use let to declare this variable.
+let fahrenheit = celsius * (9/5) + 32;
+
+//Now we'll round down.
+Math.floor(fahrenheit);
+
+//For those who prefer the Newton scale.
+let newton = celsius * (33/100);
+Math.floor(newton);
+
+//Finally, let's check our results via printing to the
+//console.
+console.log(`The temperature is ${kelvin} degrees Kelvin.`)
+console.log(`The temperature is ${celsius} degrees Celsius.`)
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`)
+console.log(`The temperature is ${newton} degrees Newton.`)
